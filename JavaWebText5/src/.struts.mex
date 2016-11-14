@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="default" location="11,165" size="334,210">
+    <action name="login" location="143,67" size="150,106">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="login_success.jsp" />
+      </result>
+      <result name="user_success">
+        <resourceEdge source="user_success" routing="0" target="userLogin_success.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="login_failure.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="login_success.jsp" path="/Login/login_success.jsp" location="30,430" size="389,55" />
+  <webResource name="userLogin_success.jsp" path="/Login/userLogin_success.jsp" location="10,10" size="334,55" />
+  <webResource name="login_failure.jsp" path="/Login/login_failure.jsp" location="397,213" size="370,55" />
+</Struts2Diagram>
+
